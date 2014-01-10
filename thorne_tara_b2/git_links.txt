@@ -1,0 +1,2 @@
+Git Link - https://github.com/tthorne/dws2/tree/gh-pages/b1selectors
+gh-pages Link - http://tthorne.github.io/dws2/thorne_tara_b1/index.html

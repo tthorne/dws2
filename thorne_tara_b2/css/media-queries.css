@@ -1,0 +1,37 @@
+@media screen and (max-width: 478px) {
+	h1 {
+		font: 3em/1.5em 'Elsie', serif;
+		padding: 10px;
+		color: #153C41;
+		text-shadow: 1px 1px 1px #F7DF95;
+	}
+
+	h2 {
+		font: 1.5em 'Elsie', serif;
+		color: #153C41;
+		text-shadow: 1px 1px 1px #51675A;
+	}
+
+	body {
+		font-size: 13px;
+	};
+}
+
+@media screen and (max-width: 740px) {
+	h1 {
+		font: 3.5em/1.5em 'Elsie', serif;
+		padding: 10px;
+		color: #153C41;
+		text-shadow: 1px 1px 1px #F7DF95;
+	}
+
+	h2 {
+		font: 1.75em 'Elsie', serif;
+		color: #153C41;
+		text-shadow: 1px 1px 1px #51675A;
+	}
+
+	body {
+		font-size: 14px;
+	};
+}
