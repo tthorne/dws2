@@ -1,0 +1,314 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Georgia", serif;
+}
+
+.imagebanner {
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  background: url("../images/gypsyvanners.jpg") no-repeat;
+  height: 533px;
+  border-bottom: 1px solid #ff0000;
+}
+
+/* Nav Menu */
+.navbar-brand {
+  float: left;
+  padding: 15px 80px;
+  font-size: 18px;
+  line-height: 20px;
+  background: url("../images/roses.png") no-repeat left;
+}
+
+.navbar-inverse {
+  background-color: #222222;
+  border-color: #ffffff;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #ff0000;
+  font: 1.75em/0.5em 'Sail', cursive;
+  text-shadow: 1px 1px 0px #ffffff;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #ffffff;
+  background-color: transparent;
+  text-shadow: 1px 1px 0px #ff0000;
+}
+
+.navbar-inverse .navbar-text {
+  color: #999999;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ff0000;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ff0000;
+  background-color: #000000;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover {
+  color: #000000;
+  background-color: #ff0000;
+}
+
+
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444444;
+  background-color: #ff0000;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #333333;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #333333;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #101010;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #080808;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  border-top-color: #999999;
+  border-bottom-color: #999999;
+}
+
+.navbar-inverse .navbar-nav > .open > a .caret,
+.navbar-inverse .navbar-nav > .open > a:hover .caret,
+.navbar-inverse .navbar-nav > .open > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle:focus {
+  outline: 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+}
+
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #ff0000;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: nowrap;
+  
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #000000;
+  text-decoration: none;
+  background-color: #ff0000;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ff0000;
+  text-decoration: none;
+  background-color: #000000;
+  outline: 0;
+}
+
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #999999;
+}
+
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+.open > a {
+  outline: 0;
+}
+
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.428571429;
+  color: #000000;
+  background: #999999;
+}
+
+.dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 990;
+}
+
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+/* Images */
+img.thumbnail {
+  display: inline-block;
+  height: auto;
+  width: 100% !important;
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 40px;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+  padding: 10px;
+  box-shadow: 1px 1px 20px #000000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.imgsize {
+	width: 100% !important;
+}
+
+/* Headers */
+h2 {
+	color: #ff0000;
+	font: 4em/1em 'Sail', cursive;
+	text-shadow: 2px 2px 0px #000000;
+	border-bottom: 1px solid #000000;
+}
+
+h3 {
+	font: 2.5em/1em 'Esteban', Georgia, serif;
+}
+
+h4 {
+	color: #999999;
+	font: italic 1.75em/1em 'Georgia', serif;
+	text-shadow: 1px 1px 0px #000000;
+}
+
+.col-lg-9 > p {
+	text-align: justify;
+}
+
+.col-lg-5 > p {
+	font: 1.25em 'Georgia';
+}
+.col-lg-5 > p::first-line {
+	color: #ff0000;
+}
+
+/* Basic Text and Link Formatting */
+a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #770000;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+b, strong {
+	color: #ff0000;
+}
+
+i, em {
+	color: #770000;
+}
