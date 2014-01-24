@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Nighshade Estates || Home of Barqoue Horses || Est. 2014</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<!--[if lt IE 9]>
+<script src="dist/html5shiv.js"></script>
+<![endif]-->
+
+<script>
+function showValue(newValue)
+{
+	document.getElementById("range").innerHTML=newValue;
+}
+</script>
+</head>
+<body>
+	<div class="wrapper">
+	<form id="survery" method="post">
+		<div class="form-group">
+		<label for="name">Your Name (First & Last):</label>
+		<input id="name" name="name" pattern="([a-zA-Z]{3,20}\s*) +[a-zA-Z]{3,20}" class="form-control" required aria-required="true">
+		</div>
+		<hr />
+		<div class="form-group">
+		<label for="email">Your Email:</label>
+		<input id="email" name="email" type="email" class="form-control" required aria-required="true">
+		</div>
+		<hr />
+		<div class="form-group">
+		<label for="email">Street Address:</label>
+		<input id="address" name="address" type="text" class="form-control" required aria-required="true">
+		</div>
+		<hr />
+		<div class="form-group">
+		<label for="city">City:</label>
+		<input id="city" name="city" type="text" class="form-control" required aria-required="true">
+		</div>
+		<hr />
+	    <div class="form-group">
+		<label for="city">State:</label>
+		<input id="state" name="state" type="text" list="states" class="form-control" required aria-required="true">
+	    <datalist id="states">
+		<select>
+		<option value="Alabama">Alabama</option>
+		<option value="Alaska">Alaska</option>
+		<option value="Arizona">Arizona</option>
+		<option value="Arkansas">Arkansas</option>
+		<option value="California">Californi</option>
+		<option value="Colorado">Colorado</option>
+		<option value="Connecticut">Connecticut</option>
+		<option value="Delaware">Delaware</option>
+		<option value="Florida">Florida</option>
+		<option value="Georgia">Georgia</option>
+		<option value="Hawaii">Hawaii</option>
+		<option value="Idaho">Idaho</option>
+		<option value="Illinois">Illinois</option>
+		<option value="Indiana">Indiana</option>
+		<option value="Iowa">Iowa</option>
+		<option value="Kansas">Kansas</option>
+		<option value="Kentucky">Kentucky</option>
+		<option value="Louisiana">Louisiana</option>
+		<option value="Maine">Maine</option>
+		<option value="Maryland">Marylan</option>
+		<option value="Massachusetts">Massachusetts</option>
+		<option value="Michigan">Michigan</option>
+		<option value="Minnesota">Minnesota</option>
+		<option value="Mississippi">Mississippi</option>
+		<option value="Missouri">Missouri</option>
+		<option value="Montana">Montana</option>
+		<option value="Nebraska">Nebraska</option>
+		<option value="Nevada">Nevada</option>
+		<option value="New Hampshire">New Hampshire</option>
+		<option value="New Jersey">New Jersey</option>
+		<option value="New Mexico">New Mexic</option>
+		<option value="New York">New York</option>
+		<option value="North Carolina">North Carolina</option>
+		<option value="North Dakota">North Dakota</option>
+		<option value="Ohio">Ohio</option>
+		<option value="Oklahoma">Oklahoma</option>
+		<option value="Oregon">Oregon</option>
+		<option value="Pennsylvania">Pennsylvania</option>
+		<option value="Rhode Island">Rhode Island</option>
+		<option value="South Carolina">South Carolina</option>
+		<option value="South Dakota">South Dakota</option>
+		<option value="Tennessee">Tennessee</option>
+		<option value="Texas">Texas</option>
+		<option value="Utah">Utah</option>
+		<option value="Vermont">Vermont</option>
+		<option value="Virginia">Virginia</option>
+		<option value="Washington">Washington</option>
+		<option value="West Virginia">West Virginia</option>
+		<option value="Wisconsin">Wisconsin</option>
+		<option value="Wyoming">Wyoming</option>
+	     </select>
+	 </datalist>
+ </div>
+ <hr />
+ <div class="form-group">
+ <label for="zip">Zip Code:</label>
+ <input id="zip" name="zip" type="number" class="form-control">
+ </div>
+<hr />
+<div class="form-group">
+<label for="tel">Phone Number:</label>
+<input id="tel" name="tel" type="tel" placeholder="1-234-546758" autocomplete="off" class="form-control" required aria-required="true">
+</div>
+<hr />
+<div class="form-group">
+<label for="gender">Gender:</label>
+<input id="gender" name="gender" type="checkbox" value="Female"> Female
+<input id="gender" name="gender" type="checkbox" value="Male"> Male
+</div>
+<hr />
+<div class="form-group">
+<label for="color">Favorite Color:</label>
+<input id="color" name="color" type="text" class="form-control">
+</div>
+<hr />
+<div class="form-group">
+<label for="color">Why do you like the color?</label>
+<textarea name="whylike" cols="50" rows="10" id="whylike" class="form-control"></textarea>
+</div>
+<hr />
+<div class="form-group">
+<label for="likejob">How much do you like your job?:</label>
+<input id="likejob" name="job" type="range" min="1" max="10" value="5" onchange="showValue(this.value)" class="form-control">
+<span id="range">5</span>
+</div>
+<div class="form-group"><input type="submit" name="Submit" value="Submit" class="btn"></div>
+	</form>
+</div>
+	<script src="js/modernizr.js"></script>
+</body>
+</html>
