@@ -1,0 +1,2 @@
+Git Link - https://github.com/tthorne/dws2/tree/gh-pages/thorne_tara_b8
+gh-pages Link - http://tthorne.github.io/dws2/thorne_tara_b8/index.html

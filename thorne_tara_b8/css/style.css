@@ -1,0 +1,359 @@
+/* HTML5 Shiv */
+header, section, footer, aside, nav, article, figure, figcaption { 
+	display: block;
+	}
+/* Body */
+	body {
+		margin: 0px;
+		padding: 0px;
+		color: #555555;
+		font: 100% "Georgia";
+		background: #B8BECD;
+	}
+	
+	/* Header */
+	#headerwrap {
+		width: 100%;
+		height: 2em;
+		background: #76166d; /* Old browsers */
+		background: -moz-linear-gradient(top,  #76166d 0%, #37014f 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#76166d), color-stop(100%,#37014f)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #76166d 0%,#37014f 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #76166d 0%,#37014f 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #76166d 0%,#37014f 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #76166d 0%,#37014f 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76166d', endColorstr='#37014f',GradientType=0 ); /* IE6-9 */
+	}
+	
+	nav {
+		display: table;
+		width: 60%;
+		margin: 0 auto;
+	}
+	
+	nav ul {
+		display: table-row;
+	}
+	
+	nav ul li {
+		display: table-cell;
+		padding: 5px 20px;
+	}
+	
+	nav ul li a {
+		color: #1259BD;
+		text-decoration: none;
+	}
+	
+	nav ul li a:hover {
+		color: #5E6386;
+	}
+	
+	nav ul li:first-child {
+		text-align: left;
+	}
+	
+	nav ul li:last-child  a {
+		text-align: right;
+	}
+	
+	nav ul li:nth-child(even) a {
+		color: #5E6386;
+	}
+	
+	nav ul li:nth-child(even) a:hover {
+		color: #1259BD;
+	}
+	
+	/* Headers */
+	h3 {
+		color: #9a029d;
+	}
+	
+	/* Banner & Logo */
+	.banner {
+		background: url("../images/gypsyvanners.jpg") no-repeat;
+		border-bottom: 1px solid #000000;
+		border-left: 1px solid #000000;
+		border-right: 1px solid #000000;
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.logo {
+		position: relative;
+		width: 90%;
+	}
+	
+	/* Content */
+	section {
+		position: relative;
+		width: 80%;
+		margin: 0 auto;
+		top: 1em;
+	}
+	
+	article {
+		position: absolute;
+		top: -1em;
+		background: #ffffff;
+		padding: 10px;
+		border-left: 1px solid #000000;
+		border-right: 1px solid #000000;
+	}
+	
+	/* Images */
+	.images {
+		width: 35%;
+	}
+	
+	img.right {
+		margin: 20px;
+		float: right;
+		border: 1px solid #000000;
+		padding: 10px;
+		box-shadow: 1px 1px 10px #000000;
+		border-radius: 50px;
+	}
+	
+	img.left {
+		margin: 20px;
+		float: left;
+		border: 1px solid #000000;
+		padding: 10px;
+		box-shadow: 1px 1px 10px #000000;
+		border-radius: 50px;
+	}
+	
+	p {
+		text-align: justify;
+	}
+	
+	a{
+		color: #76166D;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		color: #37014F;
+	}
+	
+	.clearfix {
+		clear: both;
+	}
+	
+	footer {
+		position: relative;
+		background: #5E6386;
+		padding: 5px;
+		font-size: 0.875em;
+		color: #ffffff;
+		text-align: center;
+	}	
+	
+	/* Image Gallery */
+	.gallery{
+		text-align:center;
+		border:1px solid #ccae00;
+		float:left;
+		margin:5px 1%;
+		padding:10px 2% 15px;
+		position:relative;
+		z-index:5;
+		box-sizing:border-box;	
+		box-shadow:0 0 3px #000000;		
+		transition: background-color 1s, box-shadow 1s, transform 0.5s;
+		}
+		
+	.gallery:hover{
+		background-color:#fff;
+		z-index:10;	
+		box-shadow:0 0 15px #000000;	
+		transform: scale(1.3) rotate(17deg);
+	}
+	.gallery-1 { max-width:60%; }
+
+	/* title holder */
+	.gallery h3{
+		font-size:27px;
+		color:#9a029d;
+		margin:5px 10px;
+		padding:5px 10px;
+		letter-spacing:1px;
+		text-shadow:0 1px 1px #000000;
+		border-bottom:0 solid #cccccc;	
+		transition: color 1s, text-shadow 1s, border-bottom 1s;
+	}
+	.gallery:hover h3{
+		color: #3c013d;
+		border-bottom:1px solid #999999;
+		text-shadow:1px 1px 1px #fff, 2px 2px 1px #ccae00;
+	}
+
+	/* Image */
+	.gallery .image{
+		width: 100%;
+		margin:10px;
+		opacity:0.5;
+		filter: alpha(opacity=50);	
+		transition: opacity 1s;
+	}
+	.gallery:hover .image{
+		opacity:1;
+		filter: alpha(opacity=100);
+	}
+	.gallery .image img{
+		padding:7px;
+		background:#ccae00;
+	}
+	.gallery .image img:hover{
+		background:#9a029d;
+		transition: opacity 1s;
+	}
+
+	/* Horse Stats */
+	.gallery .description, .gallery .description a{
+		color:rgb(153,153,153);
+		color:rgba(153,153,153,0);
+		text-shadow:0 0 5px #aaa;
+		text-align:left;
+		font-size:14px;
+		transition: text-shadow 1s ease 0.5s, color 1s ease 0.5s, outline 1s ease 0.5s;
+		text-align: center;
+	}
+	.gallery:hover .description, .gallery:hover .description a{
+		text-shadow:0 0 0 #fff;
+		color:rgb(100,100,100);
+	}
+	.gallery:hover .description a{
+		outline:1px dotted #777;
+	}
+	 
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+		body {
+			margin: 0px;
+			padding: 0px;
+			color: #555555;
+			font: 100% "Georgia";
+			background: #B8BECD;
+		}
+		/* Banner & Logo */
+		.banner {
+			border-bottom: 1px solid #000000;
+			border-left: 1px solid #000000;
+			border-right: 1px solid #000000;
+			width: 100%;
+			margin: 0 auto;
+		}
+	
+		/* Content */
+		section {
+			position: relative;
+			width: 100%;
+			top: 1em;
+		}
+	
+		article {
+			position: absolute;
+			top: -1em;
+			background: #ffffff;
+			padding: 10px;
+			border-left: 1px solid #000000;
+			border-right: 1px solid #000000;
+		}
+	
+		/* Images */
+		.images {
+			width: 50%;
+		}
+	
+		img.right {
+			margin: 20px;
+			float: right;
+			border: 1px solid #000000;
+			padding: 10px;
+			box-shadow: 1px 1px 10px #000000;
+			border-radius: 50px;
+		}
+	
+		img.left {
+			margin: 20px;
+			float: left;
+			border: 1px solid #000000;
+			padding: 10px;
+			box-shadow: 1px 1px 10px #000000;
+			border-radius: 50px;
+		}
+		/* Image Gallery */
+
+		/* Horse Stats */
+		.gallery .description, .gallery .description a{
+			font-size:10px;
+		}
+	
+	}
+  
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	
+		/* Banner & Logo */
+		.banner {
+			border-bottom: 1px solid #000000;
+			border-left: 1px solid #000000;
+			border-right: 1px solid #000000;
+			width: 80%;
+			margin: 0 auto;
+		}
+	
+		/* Content */
+		section {
+			position: relative;
+			width: 80%;
+			top: 1em;
+		}
+	
+		article {
+			position: absolute;
+			top: -1em;
+			background: #ffffff;
+			padding: 10px;
+			border-left: 1px solid #000000;
+			border-right: 1px solid #000000;
+		}
+	
+		/* Images */
+		.images {
+			width: 60%;
+		}
+	
+		img.right {
+			margin: 20px;
+			float: right;
+			border: 1px solid #000000;
+			padding: 10px;
+			box-shadow: 1px 1px 10px #000000;
+			border-radius: 50px;
+		}
+	
+		img.left {
+			margin: 20px;
+			float: left;
+			border: 1px solid #000000;
+			padding: 10px;
+			box-shadow: 1px 1px 10px #000000;
+			border-radius: 50px;
+		}
+		
+		/* Image Gallery */
+
+		/* Horse Stats */
+		.gallery .description, .gallery .description a{
+			font-size:10px;
+		}
+	
+	}
+	
+	} 
+
+	
